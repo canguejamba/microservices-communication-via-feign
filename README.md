@@ -23,3 +23,6 @@ Postman in action demo:
 
 **Enjoy!**
 
+
+### Microservices diagram
+![](/resources/screenshot.png)
