@@ -1,10 +1,11 @@
 /**
  * Created by IntelliJ IDEA.
  * User: Cangue.Jamba
- * Project name: microservices
+ * Project name: microservices-communication-via-feign
  */
 package io.blog.article;
 
+import io.clients.feign.shared.CommentDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

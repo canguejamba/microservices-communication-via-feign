@@ -4,14 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.microservices</groupId>
-    <artifactId>microservices</artifactId>
+    <groupId>io.microservices-communication-via-feign</groupId>
+    <artifactId>microservices-communication-via-feign</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>article</module>
         <module>comment</module>
         <module>eureka-server</module>
+        <module>feign</module>
     </modules>
 
 
@@ -57,6 +58,11 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
 
     </dependencies>

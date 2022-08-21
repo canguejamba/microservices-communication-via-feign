@@ -1,7 +1,7 @@
 /**
  * Created by IntelliJ IDEA.
  * User: Cangue.Jamba
- * Project name: microservices
+ * Project name: microservices-communication-via-feign
  */
 package io.blog.comment;
 
@@ -43,7 +43,7 @@ public class CommentService {
 
     public List<CommentDto> getComment(Long articleId) {
 
-        List<Comment> comments = commentRepository.findByArticleId(articleId);
+        List<Comment> comments = commentRepository.findCommentsByArticleId(articleId);
 
         return comments.stream().map(comment -> mapToDTO(comment)).collect(Collectors.toList());
     }
